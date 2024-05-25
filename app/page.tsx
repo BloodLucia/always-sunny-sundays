@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <Image src={bigImgUrl} decoding="async" priority alt={SITE_TITLE} />
       <div className="text-center text-sm pt-8 pb-8 border-b">{SITE_INSTRUCTION}</div>
-      <LinkTree direction='row' className="pt-16" />
+      <LinkTree direction="row" className="pt-16" />
     </Layout>
   )
 }
