@@ -15,7 +15,7 @@ export const Header: React.FC<Props> = ({ className }) => {
       <div className="md:max-w-[var(--header-desktop-max-width)] py-3 mx-auto flex justify-between items-center max-md:px-4 relative">
         <Brand />
         <Navbar className="max-md:hidden gap-2" />
-        <button onClick={() => setMenuOpen(!menuOpen)} className='md:hidden border-2 px-3 py-1.5 rounded-md'>
+        <button onClick={() => setMenuOpen(!menuOpen)} className='md:hidden'>
           <IconMenu />
         </button>
       </div>

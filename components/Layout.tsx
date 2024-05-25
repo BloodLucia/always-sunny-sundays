@@ -1,7 +1,8 @@
+import clsx from 'clsx'
 import { PropsWithChildren } from 'react'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import clsx from 'clsx'
+
 
 interface Props {
   className?: string
