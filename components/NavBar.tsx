@@ -4,7 +4,7 @@ import { NavLink } from './NavLink'
 interface Props {
   className?: string
 }
-export const Navbar: React.FC<Props> = ({ className }) => {
+export const NavBar: React.FC<Props> = ({ className }) => {
   return (
     <nav className={clsx('grid grid-cols-5', className)}>
       <NavLink href="/">主页</NavLink>
