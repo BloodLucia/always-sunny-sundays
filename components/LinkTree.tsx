@@ -1,37 +1,16 @@
 import clsx from 'clsx'
-import { IconWyy, IconSpotify, IconQQyy, IconFacebook, IconBandcamp, IconInstagram } from './icons'
+import { LinkIcon } from './LinkIcon'
 
-type LinkTreeDirection = 'row' | 'column'
 interface Props {
   className?: string
-  gap?: number
-  direction: LinkTreeDirection
 }
-const styleMap: Record<LinkTreeDirection, any> = {
-  row: '',
-  column: 'flex-col',
-}
-export const LinkTree: React.FC<Props> = ({ direction = 'row', gap = 3, className }) => {
+export const LinkTree: React.FC<Props> = ({ className }) => {
   return (
-    <ol className={clsx(styleMap[direction], `flex justify-center items-center gap-3`, className)}>
-      <a href="/">
-        <IconWyy />
-      </a>
-      <a href="/">
-        <IconQQyy />
-      </a>
-      <a href="/">
-        <IconSpotify />
-      </a>
-      <a href="/">
-        <IconFacebook />
-      </a>
-      <a href="">
-        <IconInstagram />
-      </a>
-      <a href="/">
-        <IconBandcamp />
-      </a>
+    <ol className={clsx('flex flex-col gap-2 justify-center items-center',className)}>
+      <LinkIcon href='/' name='Facebook' />
+      <LinkIcon href='/' name='Youtube' />
+      <LinkIcon href='/' name='Bandcamp' />
+      <LinkIcon href='/' name='Spotify' />
     </ol>
   )
 }
