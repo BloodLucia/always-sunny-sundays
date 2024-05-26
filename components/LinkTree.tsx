@@ -6,7 +6,7 @@ interface Props {
 }
 export const LinkTree: React.FC<Props> = ({ className }) => {
   return (
-    <ol className={clsx('flex flex-col gap-2 justify-center items-center',className)}>
+    <ol className={clsx('flex flex-col gap-3 justify-center items-center', className)}>
       <LinkIcon href='/' name='Facebook' />
       <LinkIcon href='/' name='Youtube' />
       <LinkIcon href='/' name='Bandcamp' />
