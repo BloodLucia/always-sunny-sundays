@@ -18,3 +18,11 @@
   --nav-link-height: var(--header-height);
   --main-height: calc(100vh - var(--footer-height));
 }
+
+.menu-open {
+  transform: scaleY(0);
+}
+
+.menu-close {
+  transform: scaleY(1);
+}

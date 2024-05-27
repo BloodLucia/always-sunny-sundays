@@ -1,19 +1,15 @@
-"use client";
-import clsx from "clsx";
-import { usePathname } from "next/navigation";
-import { PropsWithChildren } from "react";
+'use client'
+import clsx from 'clsx'
+import { usePathname } from 'next/navigation'
+import { PropsWithChildren } from 'react'
 
 interface Props {
-  href?: string;
-  className?: string;
+  href?: string
+  className?: string
 }
-export const NavLink: React.FC<PropsWithChildren<Props>> = ({
-  href,
-  className,
-  children,
-}) => {
-  const pathname = usePathname();
-  const isActive = pathname === href;
+export const NavLink: React.FC<PropsWithChildren<Props>> = ({ href, className, children }) => {
+  const pathname = usePathname()
+  const isActive = pathname === href
   return (
     <a 
       href={href} 
